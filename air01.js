@@ -1,7 +1,7 @@
 // This script takes 1 string as argument, and returns it split by the last argument.
 
 // Functions
-function nbArgCheck(array) 
+function nbArgCheck(number) 
 {
     if(nbArg !== 2)
     {

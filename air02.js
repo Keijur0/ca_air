@@ -1,7 +1,7 @@
 // This script takes several strings as argument and returns it as a single string, separated by the last argument given.
 
 // Functions
-function nbArgCheck(array) 
+function nbArgCheck(number) 
 {
     if(nbArg < 1)
     {
@@ -43,5 +43,3 @@ if (!nbArgCheck(nbArg))
 finalResult = concatString(argList, separator);
 // Part 4: Result display
 console.log(finalResult);
-console.log(argList);
-console.log(separator);

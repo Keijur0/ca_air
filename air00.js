@@ -1,7 +1,7 @@
 // This script takes 1 string as argument, and returns it split by spaces
 
 // Functions
-function nbArgCheck(array) 
+function nbArgCheck(number) 
 {
     if(nbArg !== 1)
     {
