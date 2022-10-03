@@ -10,14 +10,14 @@ function nbArgCheck(number)
     return true;
 }
 
-function splitString(string_to_cut, separator)
+function splitString(string_to_cut, sepa)
 {
     arrayOfWords = [];
     j = 0;
     for (let i = 0; i < string_to_cut.length; i++)
     {
         
-        if (string_to_cut[i] !== separator)
+        if (string_to_cut[i] !== sepa)
         {
             if (!arrayOfWords[j])
             {

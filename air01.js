@@ -10,13 +10,13 @@ function nbArgCheck(number)
     return true;
 }
 
-function splitStringWithSpaces(string_to_cut, separator)
+function splitStringWithSpaces(string_to_cut, sepa)
 {
     arrayOfWords = [];
     j = 0;
     for (let i = 0; i < string_to_cut.length; i++)
     {
-        if (string_to_cut[i] !== separator)
+        if (string_to_cut[i] !== sepa)
         {
             if (!arrayOfWords[j])
             {
@@ -39,13 +39,13 @@ function splitStringWithSpaces(string_to_cut, separator)
     return arrayOfWords;
 }
 
-function splitStringWithString (string_to_cut, separator)
+function splitStringWithString (string_to_cut, sepa)
 {
     stringSplitbyString = [];
     j = 0;
     for (let i = 0; i < string_to_cut.length; i++)
     {
-        if (string_to_cut[i] !== separator)
+        if (string_to_cut[i] !== sepa)
         {
           if (!stringSplitbyString[j])
            {

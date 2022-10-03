@@ -1,4 +1,4 @@
-// This script takes several strings as argument which much include only 1 intruder, and will return which is the intruder. Elements can have several pairs.
+// This script takes several strings as argument which must include only 1 intruder, and will return which is the intruder. Elements can have several pairs.
 
 // Functions
 function nbArgCheck(number) 
@@ -79,5 +79,6 @@ else if (!argValidityCheck(argList, argList))
 
 // Part 3: Resolution
 finalResult = findIntruder(argList, argList);
+
 // Part 4: Result display
 console.log(finalResult);

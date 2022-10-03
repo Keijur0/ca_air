@@ -10,7 +10,7 @@ function nbArgCheck(number)
     return true;
 }
 
-function concatString(array, separator)
+function concatString(array, sepa)
 {
     var result;
     for (let i = 0; i < array.length - 1; i++)
@@ -21,7 +21,7 @@ function concatString(array, separator)
         }
         else
         {
-            result = result + separator + array[i];
+            result = result + sepa + array[i];
         }
     }
     return result;
@@ -41,5 +41,6 @@ if (!nbArgCheck(nbArg))
 
 // Part 3: Resolution
 finalResult = concatString(argList, separator);
+
 // Part 4: Result display
 console.log(finalResult);
