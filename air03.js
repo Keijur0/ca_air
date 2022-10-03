@@ -1,4 +1,4 @@
-// This script takes several strings as argument and returns it as a single string, separated by the last argument given.
+// This script takes several strings as argument which much include only 1 intruder, and will return which is the intruder. Elements can have several pairs.
 
 // Functions
 function nbArgCheck(number) 
