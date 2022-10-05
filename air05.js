@@ -9,9 +9,9 @@ function nbArgCheck(number){
 }
 
 function argValidityCheck(list){
-    var nbLength = list.length;
+    nbLength = list.length;
     for(i = 0; i < nbLength; i++){
-        var strLength = list[i].length;
+        strLength = list[i].length;
         for(j = 0; j < strLength; j++){
             if(list[i].charCodeAt(j) < 48 || list[i].charCodeAt(j) > 57){
                 return false;
@@ -22,7 +22,7 @@ function argValidityCheck(list){
 }
 
 function calcValidityCheck(string){
-    var strLength = string.length;
+    strLength = string.length;
     if(string.charCodeAt(0) !== 43 && string.charCodeAt(0) !== 45){
         return false
     }
@@ -38,8 +38,8 @@ function calcValidityCheck(string){
 
 
 function defineCalculation(param1){
-    var opLength = param1.length;
-    var number;
+    opLength = param1.length;
+    number;
     // Defining the number for operation
     for(let i = 1; i < opLength; i++){
         if(!number){
@@ -55,9 +55,9 @@ function defineCalculation(param1){
 
 function applyCalculation(param1, param2){
     listLength = param1.length;
-    var result;
+    result;
     for(let i = 0; i < listLength; i++){
-        // Defining the operation
+        // Doing the operation
         if(operator == "+"){
             if(!result){
                 result = parseInt(param1[i]) + parseInt(param2);
@@ -79,11 +79,11 @@ function applyCalculation(param1, param2){
 }
 
 // Part 1: Parsing
-var argList = process.argv.splice(2, process.argv.length - 1);
-var nbArg = argList.length;
-var operation = argList[argList.length - 1];
-var operator = operation[0];
-var numbersList = argList.splice(0, argList.length - 1)
+argList = process.argv.splice(2, process.argv.length - 1);
+nbArg = argList.length;
+operation = argList[argList.length - 1];
+operator = operation[0];
+numbersList = argList.splice(0, argList.length - 1)
 
 // Part 2: Error management
 if (!nbArgCheck(nbArg) || !argValidityCheck(numbersList) || !calcValidityCheck(operation)){
