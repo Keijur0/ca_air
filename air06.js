@@ -90,4 +90,9 @@ if (!nbArgCheck(nbArg)){
 compareString(stringList, comparator);
 
 // Part 4: Result display
-console.log(result);
+if(!result){
+    console.log("No result: character(s) contained in all arguments.")
+}
+else{
+    console.log(result);
+}
