@@ -14,7 +14,6 @@ function argValidityCheck(param1){
         nbLength = param1[i].length;
         for(let j = 0; j < nbLength; j++){
             if(param1[i].charCodeAt(j) < 48 || param1[i].charCodeAt(j) > 57){
-                console.log("issue1");
                 return false;
             }
         }
@@ -23,11 +22,9 @@ function argValidityCheck(param1){
 }
 // Sorted lists?
 function argSortCheck(param1){
-    console.log(param1);
     listLength=param1.length;
     for(let i = 0; i < listLength-1; i++){
         if(param1[i] > param1[i+1]){
-            console.log("issue2");
             return false;
         }
     }
@@ -41,7 +38,6 @@ function argEqualityCheck(param1, param2){
                 continue;
             }
             else if(param1[i] == param2[j]){
-                console.log("issue4");
                 return false;
             }
         }
@@ -74,7 +70,6 @@ function findSeparator(param1){
         }
     }
     if(!separatorFound){
-        console.log("issue5");
         return false;
     }
     else{
@@ -90,7 +85,6 @@ function mergeArrays(param1, param2){
                 list2Length = param2.unshift(param1[i]);
             }
             else if(+param1[i] > +param2[list2Length-1]){
-                console.log(param1[i]);
                 list2Length = param2.push(param1[i]);
             }
             else if(+param1[i] < +param2[j] && +param1[i] > +param2[j-1]){

@@ -23,6 +23,7 @@ function argValidityCheck(param1)
 }
 // Sorted list?
 function argSortCheck(param1){
+    listlength=param1.length;
     if(param1.length > 1){
         for(let i = 0; i < listLength-1; i++){
             if(param1[i] > param1[i+1]){
@@ -33,6 +34,7 @@ function argSortCheck(param1){
     return true;
 }
 function argEqualityCheck(param1, param2){
+    listlength=param1.length;
     for(let i = 0; i < listLength; i++){
         if(param2 == param1[i]){
             return false;
