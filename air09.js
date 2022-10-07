@@ -11,9 +11,11 @@ function moveToLeft(param1){
     newArray = [];
     list1Length = param1.length;
     newArrayLength = newArray.length;
-    for(let i=0; i<list1Length; i++){
+    // Doing the rotation for every arguments except the 1st one
+    for(let i=1; i<list1Length; i++){
         newArray[i-1] = param1[i];
     }
+    // Then add the 1st one at the end
     newArray.push(param1[0]);
     return newArray;
 }
