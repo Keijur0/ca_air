@@ -36,12 +36,10 @@ function drawPyramid(param1, param2){
         // Character
         for(let k = 0; k < strLength-nbSpaces; k++){
             result = result + param1;
-            console.log(param2);
         }
         line++;
         newArray.push(result);
     }
-    console.log(newArray);
     return newArray;
 }
 function formatResult(param1){
