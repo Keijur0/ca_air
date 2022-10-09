@@ -13,12 +13,17 @@ function nbArgCheck(number)
 
 function removeAdjRepChars(param1)
 {
-    result = param1[0];
-    for (let i = 1; i < param1.length; i++)
+    var result = "";
+    for (let i = 0; i < param1.length; i++)
     {
         if (param1[i] !== param1[i+1])
         {
+            if(!result){
+                result = param1[i];
+            }
+            else{
             result = result + param1[i];
+            }
         }
     }
     return result;

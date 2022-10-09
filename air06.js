@@ -12,7 +12,7 @@ function addResult(param1){
         result = param1;
     }
     else{
-        result = result + " " + param1;
+        result = result + ", " + param1;
     }
 }
 

@@ -3,7 +3,7 @@
 // Functions
 function nbArgCheck(number) 
 {
-    if(nbArg !== 2)
+    if(number !== 2)
     {
         return false;
     }
@@ -88,7 +88,7 @@ function formatResult(array)
 
 // Part 1: Parsing
 argList = process.argv.splice(2, process.argv.length - 1);
-nbArg = process.argv.length;
+nbArg = argList.length;
 separator1 = " ";
 separator2 = argList[nbArg - 1];
 string = argList[0];

@@ -39,7 +39,7 @@ function calcValidityCheck(string){
 
 function defineCalculation(param1){
     opLength = param1.length;
-    number;
+    let number;
     // Defining the number for operation
     for(let i = 1; i < opLength; i++){
         if(!number){
@@ -55,7 +55,8 @@ function defineCalculation(param1){
 
 function applyCalculation(param1, param2){
     listLength = param1.length;
-    result;
+    operator = operation[0];
+    let result;
     for(let i = 0; i < listLength; i++){
         // Doing the operation
         if(operator == "+"){
@@ -82,7 +83,6 @@ function applyCalculation(param1, param2){
 argList = process.argv.splice(2, process.argv.length - 1);
 nbArg = argList.length;
 operation = argList[argList.length - 1];
-operator = operation[0];
 numbersList = argList.splice(0, argList.length - 1)
 
 // Part 2: Error management

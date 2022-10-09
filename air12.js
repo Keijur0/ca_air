@@ -26,10 +26,10 @@ function partitionArray(param1, param2, param3){
     i = param2;
     j = param3;
     while(i <= j){
-        while(param1[i] < pivot){
+        while(parseInt(param1[i]) < pivot){
             i++;
         }
-        while(param1[j] > pivot){
+        while(parseInt(param1[j]) > pivot){
             j--;
         }
         if(i <= j){
